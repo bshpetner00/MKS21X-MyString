@@ -9,6 +9,6 @@ public class driver {
 		System.out.println(deeble.charAt(5));
 		System.out.println(deeble.length());
 		System.out.println(deeble.subSequence(0,6));
-		System.out.println(deeble.subSequence(0,10));
+		System.out.println(deeble.toString());
 	}
 }

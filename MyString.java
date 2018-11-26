@@ -1,4 +1,4 @@
-public class MyString {
+public class MyString implements CharSequence{
 	private char[]data;
 	public MyString(CharSequence s) {
 		int length = s.length();
@@ -29,6 +29,13 @@ public class MyString {
 		catch (ArrayIndexOutOfBoundsException e) {
 			throw new IndexOutOfBoundsException();
 		}
+	}
+	public String toString() {
+		String s = "";
+		for (int i = 0; i < data.length; i++) {
+			s += data[i];
+		}
+		return s;
 	}
 
 }
