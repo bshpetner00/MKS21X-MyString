@@ -1,6 +1,4 @@
-
-
-public class MyString{
+public class MyString {
 	private char[]data;
 	public MyString(CharSequence s) {
 		int length = s.length();
@@ -9,7 +7,9 @@ public class MyString{
 			data[i] = s.charAt(i);
 		} 
 	}
-
+	public int length() {
+		return data.length;
+	}
 	public char charAt(int i) {
 		try {
 			return data[i];
