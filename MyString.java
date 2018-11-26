@@ -1,10 +1,10 @@
 
 
-public class MyString implements CharSequence{
+public class MyString{
 	private char[]data;
-	public myString(CharSequence s) {
-		int length = s.length;
-		data = new char[len];
+	public MyString(CharSequence s) {
+		int length = s.length();
+		data = new char[length];
 		for (int i = 0; i < length; i++) {
 			data[i] = s.charAt(i);
 		} 
