@@ -18,5 +18,17 @@ public class MyString {
 			throw new IndexOutOfBoundsException();
 		}
 	}
+	public CharSequence(int start, int end) {
+		String sequence = "";
+		try {
+			for (int i = start; i < end; i++ ) {
+				sequence += data[i];
+			}
+			return sequence;
+		}
+		catch (ArrayIndexOutOfBoundsException e) {
+			throw new IndexOutOfBoundsException();
+		}
+	}
 
 }
