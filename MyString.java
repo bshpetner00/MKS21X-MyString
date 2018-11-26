@@ -18,7 +18,7 @@ public class MyString {
 			throw new IndexOutOfBoundsException();
 		}
 	}
-	public CharSequence(int start, int end) {
+	public CharSequence subSequence(int start, int end) {
 		String sequence = "";
 		try {
 			for (int i = start; i < end; i++ ) {
